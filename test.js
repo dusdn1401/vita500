@@ -1,9 +1,13 @@
 $(function () {
-    const menu = document.querySelector('.menu-trigger');
-    const nav = document.querySelector('nav');
     $('.menu-trigger').on('click', function () {
-            $('.menu-trigger').toggleClass('active');
-            $('header nav').show();
+            if ($('.menu-trigger').hasClass('active')) {
+                $('.menu-trigger').removeClass('active');
+                $('header nav').show();
+            }
+            else {
+                $('.menu-trigger').addClass('active');
+                $('header nav').hide();
+            }
         })
         //end
 })

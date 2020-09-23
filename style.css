@@ -1,0 +1,197 @@
+@import url('common.css');
+body {
+    height: 100vh;
+    margin: 0 20px;
+    background: linear-gradient(90deg, #fff 35%, #ffc000 0%);
+}
+
+header {
+    width: 100%;
+    padding: 30px;
+}
+
+header > div {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div h1 {}
+
+header div h1 a {
+    color: black;
+}
+
+header div div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div div nav {
+    display: none;
+}
+
+header div div nav ul {}
+
+header div div nav ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+header div div nav ul li a {
+    color: white;
+}
+
+header div div a {}
+
+header div div a span {
+    display: block;
+    background: white;
+    width: 40px;
+    height: 3px;
+    margin-bottom: 7px;
+}
+
+header div div a span.active {}
+
+.menu-trigger.active span:nth-of-type(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.menu-trigger.active span:nth-of-type(2) {
+    opacity: 0;
+}
+
+.menu-trigger.active span:nth-of-type(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+
+/*=================================*/
+
+main {
+    width: 100%;
+}
+
+main div {
+    display: inline-block
+}
+
+main .ban div > a span {
+    color: rgba(255, 255, 255, 0);
+    margin-right: 40px;
+    background: url(../img/Untitled-3.png) no-repeat;
+    background-position: center;
+    font-weight: bold;
+}
+
+main .ban div > a span:nth-of-type(1) {
+    background: none;
+    color: #fff;
+}
+
+main div > a:before {
+    content: '';
+    display: block;
+    background: rgba(0, 0, 0, 0.2);
+    width: 1px;
+    height: 120px;
+    margin: 0 0 50px 10px;
+}
+
+main div > a {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-size: 25px;
+}
+
+main div > a:after {
+    position: absolute;
+    top: 120%;
+    content: '';
+    display: block;
+    background: rgba(0, 0, 0, 0.2);
+    width: 1px;
+    height: 120px;
+    margin: 0px 0 0px 10px;
+}
+
+main div a span {}
+
+main div div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main div div img {
+    position: fixed;
+    top: 25%;
+    left: 16%;
+    width: 30%;
+    margin: 0 auto;
+}
+
+main div div img:hover {
+    transform: scale(1.5);
+    transition: 1s;
+}
+
+main div div article {
+    position: fixed;
+    top: 32%;
+    left: 50%;
+    width: 50%;
+    white-space: pre-line;
+    color: white;
+}
+
+main div div article h2 {
+    font-size: 35px;
+}
+
+main div div article p {
+    font-size: 12px;
+}
+
+main div div article p:nth-of-type(2) a {
+    color: white;
+}
+
+main div div ul {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform-origin: left top;
+}
+
+main div div ul li {
+    color: white;
+    width: 10px;
+    height: 10px;
+    margin: 15px 8px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+main div div ul li:nth-of-type(1) {
+    opacity: 1;
+}
+
+footer {
+    position: absolute;
+    right: 8%;
+    bottom: 3%;
+}
+
+footer a {}
+
+footer a img {
+    padding: 10px;
+}
